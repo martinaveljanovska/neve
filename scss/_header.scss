@@ -1,0 +1,18 @@
+#header {
+	position: relative;
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 30%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+
+	@media screen and (max-width: 560px) {
+		// background-image: url("../img/header-sm.jpg");
+		background-size: cover;
+		padding-bottom: 55%;
+		background-position: center;
+	}
+} // header

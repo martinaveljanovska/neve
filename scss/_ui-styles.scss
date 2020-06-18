@@ -1,0 +1,163 @@
+.hide {
+	display: none !important;
+}
+.flex {
+	display: flex !important;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+p {
+	line-height: 1.5em;
+	// color: #b1b1b1;
+	font-weight: 300;
+}
+
+.txt-center {
+	text-align: center;
+}
+.text-box {
+	padding: 20px 30px;
+	background-color: $primary;
+	color: $dark;
+}
+
+.box-link {
+	background: #212156;
+	padding: 20px;
+}
+
+.small {
+	font-size: 14px;
+}
+
+.text-container {
+	// max-width: 700px;
+	margin: 0 auto;
+}
+section {
+	padding: 40px 20px;
+
+	.container-title {
+		text-align: center;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.container-title {
+	color: $primary;
+	margin-bottom: 30px;
+	font-size: 35px;
+	line-height: 1.2;
+}
+
+.button {
+	font-family: inherit;
+	border: 1px solid;
+	display: inline-block;
+	font-size: inherit;
+	font-weight: 400;
+	color: #fff;
+	padding: 15px 25px;
+	// height: max-content;
+	position: relative;
+	cursor: pointer;
+
+	@include transition;
+
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		color: #222;
+		border-color: #fff;
+	}
+
+	&.none-btn {
+		border: none;
+		padding: 0;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			color: #fff;
+		}
+	}
+} // button
+
+.cta-btn {
+	@extend .button;
+
+	color: $dark;
+	border: none;
+	background: $primary;
+	text-decoration: none;
+	@include transition;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $primary;
+	}
+}
+
+a.link {
+	text-decoration: underline;
+	font-style: italic;
+	// color: $primary;
+}
+
+//back to top button
+.back-to-top {
+	background: none;
+	display: none;
+	margin: 0;
+	position: fixed;
+	bottom: 250px;
+	right: 23px;
+	width: 35px;
+	height: 35px;
+	z-index: 100;
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.5;
+	background-color: rgba(9, 9, 9, 0.6);
+	border-radius: 60px;
+	@include transition;
+	i {
+		font-size: 38px;
+		position: relative;
+		left: -1.5px;
+		top: -1.5px;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+.txt-dark {
+	color: #111;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.mw-700 {
+	max-width: 700px;
+}
+.m-auto {
+	margin: 0 auto;
+}
+.m-top {
+	margin-top: 30px;
+}
