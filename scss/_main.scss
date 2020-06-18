@@ -175,7 +175,7 @@ body {
 
 .new-amount-grid {
 	display: grid;
-	grid-gap: 15px;
+	grid-gap: 25px;
 
 	.amounts-list-item {
 		background-color: $dark;
@@ -241,6 +241,43 @@ body {
 	flex: 1;
 	max-width: 600px;
 	padding: 0 50px;
+	p {
+		color: #fff;
+	}
+}
+
+.sponsorships {
+	.new-amount-grid {
+		display: grid;
+		grid-gap: 15px;
+		width: 100%;
+
+		.amounts-list-item {
+			background: #212156;
+
+			.amount-number-new {
+				display: flex;
+				align-items: center;
+
+				.price {
+					color: $primary;
+					font-weight: 600;
+					font-family: $font2;
+				}
+			}
+
+			.price-name {
+				padding: 0 20px;
+
+				.title {
+					display: block;
+					text-transform: uppercase;
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 471px) {

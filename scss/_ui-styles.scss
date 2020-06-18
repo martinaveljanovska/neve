@@ -145,8 +145,14 @@ a.link {
 .bg-white {
 	background-color: #ffffff;
 }
+.txt-white {
+	color: #ffffff;
+}
 .txt-dark {
 	color: #111;
+}
+.txt-gold {
+	color: $primary;
 }
 .flex {
 	display: flex;
@@ -160,4 +166,13 @@ a.link {
 }
 .m-top {
 	margin-top: 30px;
+}
+.p-30 {
+	padding: 30px;
+}
+.txt-uppercase {
+	text-transform: uppercase;
+}
+.txt-center {
+	text-align: center;
 }
