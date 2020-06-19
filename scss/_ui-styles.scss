@@ -59,7 +59,7 @@ section {
 }
 
 .button {
-	font-family: inherit;
+	font-family: $font2;
 	border: 1px solid;
 	display: inline-block;
 	font-size: inherit;
@@ -69,6 +69,7 @@ section {
 	// height: max-content;
 	position: relative;
 	cursor: pointer;
+	background-color: $primary;
 
 	@include transition;
 
@@ -77,11 +78,13 @@ section {
 		background-color: #fff;
 		color: #222;
 		border-color: #fff;
+		border: 1px solid #111;
 	}
 
 	&.none-btn {
 		border: none;
 		padding: 0;
+		background-color: transparent;
 
 		&:hover,
 		&:focus {
@@ -157,6 +160,15 @@ a.link {
 .flex {
 	display: flex;
 	flex-wrap: wrap;
+}
+.f-column {
+	flex-direction: column;
+}
+.j-center {
+	justify-content: center;
+}
+.a-center {
+	align-items: center;
 }
 .mw-700 {
 	max-width: 700px;

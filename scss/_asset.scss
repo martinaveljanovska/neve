@@ -1,46 +1,45 @@
-.asset{
-  background: #fff;
+.asset {
+	background: #fff;
 
-  .asset-description{
-    max-width: 70ch;
-      margin: 0 auto;
-      text-align: center;
-    padding: 0 10px;
-    color: #000;
+	.asset-description {
+		max-width: 70ch;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 10px;
+		color: #000;
+	}
 
-  }
+	@media screen and(max-width: 700px) {
+		.responsive-iframe {
+			position: relative;
+			overflow: hidden;
+			padding-top: 56.25%;
 
-
- 
-  @media screen and(max-width: 700px){
-  .responsive-iframe{
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-
-    iframe{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-  
-
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 } // asset
 
-@media (max-width: 990px){
-  .asset{
-    flex-direction: column;
+@media (max-width: 990px) {
+	.asset {
+		flex-direction: column;
 
-    .asset-description{
-
-      p{
-        width: 100%;
-      }
-    }
-  }
+		.asset-description {
+			p {
+				width: 100%;
+			}
+		}
+	}
+}
+.inplayer-preview-box {
+	border: none !important;
+}
+.inplayer-imageholder {
+	background-color: #fff !important;
 }
