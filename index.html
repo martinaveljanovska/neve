@@ -102,12 +102,15 @@
 
 
 
-  <header id="header">
+  <header id="header" class="bg-white">
     <img src="img/banner.jpg" alt="">
   </header>
 
   <div class="bg-white">
-    <img src="img/about VL.jpg" alt="about vl" class="about-vl "></div>
+    <a href="#/" class=" buy-104905"> <img src="img/about VL.jpg" alt="about vl" class="about-vl "></a>
+
+  </div>
+
   <section class="asset" id="asset">
     <div class="asset-description">
       <!-- <h1 id="item-title" class="container-title"></h1> -->
@@ -1001,7 +1004,7 @@
       </div>
     </div>
     <div class="txt-center m-top ">
-      <a href="#/" class="button" id="buy-104905">Don't miss out, register today to access the show</a>
+      <a href="#/" class="button buy-104905">Don't miss out, register today to access the show</a>
     </div>
 
     <!-- grid -->
@@ -1073,9 +1076,10 @@
 
     // });
 
-    $('#buy-104905').click(() => {
+    $('.buy-104905').click(() => {
       paywall.showPaywall({ asset: { assetId: 104905 } });
     })
+
 
     $('.inplayer-paywall-logout').parent().hide();
     paywall.on('authenticated', function () {
