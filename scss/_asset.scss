@@ -1,5 +1,6 @@
 .asset {
 	background: #fff;
+	padding: 10px 20px;
 
 	.asset-description {
 		max-width: 70ch;
@@ -41,5 +42,6 @@
 	border: none !important;
 }
 .inplayer-imageholder {
-	background-color: #fff !important;
+	background-color: transparent !important;
+	padding-bottom: 45%;
 }
