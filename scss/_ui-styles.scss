@@ -122,7 +122,7 @@ a.link {
 	display: none;
 	margin: 0;
 	position: fixed;
-	bottom: 250px;
+	bottom: 150px;
 	right: 23px;
 	width: 35px;
 	height: 35px;
@@ -171,6 +171,7 @@ a.link {
 	align-items: center;
 }
 .mw-700 {
+	width: 100%;
 	max-width: 700px;
 }
 .m-auto {
