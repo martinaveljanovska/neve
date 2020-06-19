@@ -19,6 +19,7 @@ p {
 	text-align: center;
 }
 .text-box {
+	margin-top: 10px;
 	padding: 20px 30px;
 	background-color: $primary;
 	color: $dark;
@@ -58,7 +59,8 @@ section {
 	line-height: 1.2;
 }
 
-.button {
+.button,
+.inplayer-button {
 	font-family: $font2;
 	border: 1px solid;
 	display: inline-block;

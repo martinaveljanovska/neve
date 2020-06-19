@@ -38,10 +38,15 @@
 		}
 	}
 }
-.inplayer-preview-box {
-	border: none !important;
-}
+
 .inplayer-imageholder {
 	background-color: transparent !important;
 	padding-bottom: 45%;
+}
+.inplayer-itemdetails {
+	display: none !important;
+}
+.inplayer-buybutton {
+	display: block !important;
+	margin: 0 auto !important;
 }
