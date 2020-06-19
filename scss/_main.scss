@@ -191,6 +191,7 @@ body {
 .new-amount-grid {
 	display: grid;
 	grid-gap: 25px;
+	padding-top: 20px;
 
 	.amounts-list-item {
 		background-color: $dark;
