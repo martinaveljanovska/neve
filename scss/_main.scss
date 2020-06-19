@@ -35,6 +35,7 @@ body {
 } // header
 
 .about-vl {
+	width: 100%;
 	max-width: 700px;
 	margin: 0 auto;
 	display: block;
@@ -103,7 +104,7 @@ body {
 			// width: 100px;
 
 			.logo {
-				width: 190px;
+				width: 150px;
 			}
 		}
 	} // nav-container
@@ -191,6 +192,7 @@ body {
 	display: grid;
 	grid-gap: 25px;
 
+
 	.amounts-list-item {
 		background-color: $dark;
 		// background: rgb(32, 35, 208);
@@ -205,7 +207,7 @@ body {
 
 		.amount-number-new {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 
 			.headshot {
 				img {
@@ -224,12 +226,13 @@ body {
 				margin: 10px;
 			}
 			i {
-				font-size: 20px;
+				font-size: 25px;
 			}
 
 			.talent-name {
 				padding: 10px 20px 0;
 				font-size: 25px;
+				margin-top: 0;
 				.title {
 					display: block;
 					text-transform: uppercase;
@@ -239,6 +242,7 @@ body {
 			}
 		}
 	}
+	
 }
 
 .row {
@@ -308,7 +312,7 @@ body {
 
 			.amount-number-new {
 				justify-content: center;
-				background: rgba(255, 255, 255, 0.03);
+				// background: rgba(255, 255, 255, 0.03);
 
 				.headshot {
 					color: $primary;
