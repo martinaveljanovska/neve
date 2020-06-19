@@ -251,9 +251,12 @@ body {
 		display: grid;
 		grid-gap: 15px;
 		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
 
 		.amounts-list-item {
 			background: #212156;
+			width: inherit;
 
 			.amount-number-new {
 				display: flex;
