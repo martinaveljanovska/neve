@@ -158,7 +158,7 @@
               We also accept students who have an advanced education and want to deepen their
               understanding and become leaders. Neve gives the support needed to help women
               challenge the status quo and make independent choices. </p>
-            <p><b>While Corona has created
+            <p><b style="font-weight: 900;">While Corona has created
                 new obstacles to the world of Kiruv, Neve has fully instituted an initiative that provides
                 both education and support to all of our alumnae as well as continuing our important
                 outreach.</b></p>
@@ -181,8 +181,8 @@
               and women who have experienced or are in relationships involving physical, sexual or
               psychological abuse.
             </p>
-            <p><b> During the current Corona Pandemic, these life saving services
-                areneeded more than ever!</b></p>
+            <p><b style="font-weight: 900;"> During the current Corona Pandemic, these life saving services
+                are needed more than ever!</b></p>
           </div>
 
         </div>
@@ -214,7 +214,7 @@
   <section class="sponsorships">
     <h2 class="container-title">Sponsorships</h2>
 
-    <div class="new-amount-grid">
+    <div class="new-amount-grid prices">
       <div class="amounts-list-item">
         <div class="amount-number-new">
           <div class="price">$36</div>
@@ -996,9 +996,10 @@
         </div>
       </div>
     </div>
+    <div class="txt-center m-top ">
+      <a href="#/" class="button" id="buy-104905">Don't miss out, register today to access the show</a>
+    </div>
 
-    <a href="">
-      <button class="button">Don't miss out, register today to access the show</button> </a>
     <!-- grid -->
   </section>
 
@@ -1059,14 +1060,18 @@
 
     // change LIVE or DEMO below
 
-    $.ajax({
-      url: `${live}/items/98230`,
-      success: function (resp) {
-        $('#item-title').html(resp.metahash.preview_title);
+    // $.ajax({
+    //   url: `${live}/items/98230`,
+    //   success: function (resp) {
+    //     $('#item-title').html(resp.metahash.preview_title);
 
-      }
+    //   }
 
-    });
+    // });
+
+    $('#buy-104905').click(() => {
+      paywall.showPaywall({ asset: { assetId: 104905 } });
+    })
 
     $('.inplayer-paywall-logout').parent().hide();
     paywall.on('authenticated', function () {
