@@ -266,6 +266,14 @@ body {
 	}
 }
 
+.game {
+	justify-content: center;
+	align-items: center;
+	p {
+		max-width: 700px;
+	}
+}
+
 .sponsorships {
 	.new-amount-grid {
 		display: grid;
