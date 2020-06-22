@@ -269,12 +269,10 @@ body {
 .game {
 	justify-content: center;
 	align-items: center;
+	padding-top: 0;
 	padding-bottom: 0;
 	p {
 		max-width: 700px;
-	}
-	h2 {
-		font-family: $font2;
 	}
 }
 
