@@ -90,8 +90,9 @@
     <div class="inplayer-paywall" id="inplayer-104905"></div>
 
 
-    <p class="asset-description">Access to the show is available after your $18 ticket purchase. One email log in
-      per device.</p>
+    <p class="asset-description">You must first register with your email address and create a password. You will then be
+      asked to purchase your ticket for $18. Access to the show is available only after these 2 steps have been
+      completed. One email log in per device. </p>
   </section>
 
   <section class="sponsor-logos bg-white">
@@ -1117,7 +1118,12 @@
 
   <script type="text/javascript">
 
-    var paywall = new InplayerPaywall('0eb39dd9-90ce-45db-ab3e-e149ca530fc8', [{ id: 104905 }]);
+    var paywall = new InplayerPaywall('0eb39dd9-90ce-45db-ab3e-e149ca530fc8', [{
+      id: 104905,
+      options: {
+        registerFirst: true
+      }
+    }]);
 
     const live = 'https://services.inplayer.com';
     const demo = 'https://staging-v2.inplayer.com';

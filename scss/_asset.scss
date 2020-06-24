@@ -10,7 +10,7 @@
 		color: #000;
 		z-index: 50;
 		position: relative;
-		top: -250px;
+		top: -267px;
 		left: 0;
 	}
 
@@ -30,6 +30,7 @@
 		}
 		.asset-description {
 			top: -230px;
+			font-size: x-small;
 		}
 	}
 } // asset
@@ -43,11 +44,6 @@
 				width: 100%;
 			}
 		}
-	}
-}
-@media (max-width: 400px) {
-	.asset-description {
-		font-size: x-small;
 	}
 }
 
