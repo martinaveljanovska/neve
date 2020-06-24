@@ -78,10 +78,7 @@ section {
 
 	&:hover,
 	&:focus {
-		background-color: #fff;
-		color: #222;
-		border-color: #fff;
-		border: 1px solid #111;
+		transform: translateY(-2px);
 	}
 
 	&.none-btn {
