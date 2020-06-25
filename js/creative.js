@@ -63,6 +63,13 @@ $(document).ready(function () {
 });
 
 $(function () {
+	$("div").hasClass("event_page").find("p.asset-description").css("display:none !important")
+
+	// paywall.on('payment', function(){
+	// 	$("p").hasClass("asset-description").css("display:none !important")
+	// });
+
+
 	var toggle = $("#toggle");
 
 	$("#menu a").on("click", function () {
@@ -78,4 +85,5 @@ $(function () {
 		$("#menu").toggleClass("slideInDown slideOutUp");
 		$("body").toggleClass("overflow");
 	});
+
 });
