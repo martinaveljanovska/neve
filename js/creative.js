@@ -63,11 +63,16 @@ $(document).ready(function () {
 });
 
 $(function () {
-	$("div").hasClass("event_page").find("p.asset-description").css("display:none !important")
+	// $("div").hasClass("event_page").find("p.asset-description").css("display:none !important")
 
-	// paywall.on('payment', function(){
+	// paywall.on('authenticated', function(){
 	// 	$("p").hasClass("asset-description").css("display:none !important")
 	// });
+
+
+	paywall.on("authenticated", () => {
+		$("p").hasClass("asset-description").css("display:none !important");
+	});
 
 
 	var toggle = $("#toggle");
