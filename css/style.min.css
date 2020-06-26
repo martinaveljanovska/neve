@@ -923,6 +923,17 @@ body {
   margin-bottom: 10px;
 }
 
+#video video {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 585px) {
+  #video video {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 471px) {
   .new-amount-grid .amounts-list-item {
     display: -ms-grid;
