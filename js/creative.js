@@ -56,24 +56,17 @@ $(document).ready(function () {
 		return false;
 	});
 
-	//  scrollreveal
-	// ScrollReveal().reveal('.header-content', {delay: 500});
-	// ScrollReveal().reveal('.package-container');
-	// ScrollReveal().reveal('#preview-item');
+
 });
 
 $(function () {
-	// $("div").hasClass("event_page").find("p.asset-description").css("display:none !important")
-
-	// paywall.on('authenticated', function(){
-	// 	$("p").hasClass("asset-description").css("display:none !important")
-	// });
-
-
-	paywall.on("authenticated", () => {
-		$("p").hasClass("asset-description").css("display:none !important");
-	});
-
+	paywall.on("access", (e, a) => {
+		if (a.hasAccess) {
+		  let assetId = a.asset.id;
+		//   console.log(assetId)
+		  $(`.asset-description`).hide();
+		}
+	  });
 
 	var toggle = $("#toggle");
 
